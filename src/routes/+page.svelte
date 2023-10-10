@@ -1,2 +1,15 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<script lang="ts">
+	import MarkdownArea from '../components/MarkdownArea.svelte';
+</script>
+
+<div>
+	<div>
+		<input
+			type="text"
+			class="input input-ghost w-full focus:outline-none placeholder-neutral text-neutral bg-base-100 text-[21.4px] opacity-50"
+			placeholder="# Title goes here..."
+		/>
+		<!-- <textarea class="textarea-ghost w-full h-full bg-base-100 box-border" name="" id="" /> -->
+		<MarkdownArea />
+	</div>
+</div>
